@@ -9,6 +9,9 @@ The code is intentionally simple and readable for a university project.
 
 from dataclasses import dataclass
 
+# Note:
+# Project explanations and analysis are documented in the report/README,
+# not inside the code.
 CRITICAL_FACILITY_TYPES = {"Medical", "Government", "Transit Hub", "Airport"}
 
 # Default critical facilities:
@@ -113,8 +116,15 @@ def calculate_mst_weight(edge, nodes):
     from_id = str(get_value(edge, "from_id"))
     to_id = str(get_value(edge, "to_id"))
 
-    from_node = node_map[from_id]
-    to_node = node_map[to_id]
+    from_node = node_map.get(from_id)
+    to_node = node_map.get(to_id)
+
+    if from_node is None or to_node is None:
+        print(
+            f"Warning: Missing node data for edge {from_id} -> {to_id}. "
+            "Skipping this edge."
+        )
+        return float("inf")
 
     distance = get_value(edge, "distance")
     road_type = get_value(edge, "road_type")
@@ -321,24 +331,6 @@ def print_mst_result(mst_edges):
     print(f"New roads: {analysis['number_of_new_roads']}")
     print(f"Maintenance score: {analysis['maintenance_score']}")
 
-def get_mst_report_note():
-    """Return a short explanation of the constrained MST approach."""
-    return (
-        "We first generated an MST using a modified Kruskal algorithm. Then, "
-        "we added extra edges when needed to satisfy critical facility "
-        "connectivity constraints. Therefore, the final network is a "
-        "constrained MST-based optimized network, not always a pure MST."
-    )
-
-def get_mst_complexity_analysis():
-    """Return the time and space complexity of the MST algorithm."""
-    return (
-        "The time complexity of Kruskal's algorithm is O(E log E), mainly due "
-        "to sorting the edges. The Union-Find operations are almost constant "
-        "time, so the total complexity remains O(E log E). The space "
-        "complexity is O(V + E)."
-    )
-
 def load_real_project_data():
     """
     Placeholder for connecting this module with the real Cairo project data loader.
@@ -455,8 +447,6 @@ if __name__ == "__main__":
 
     print_mst_result(mst)
     print(f"\nNetwork connected: {is_network_connected(sample_nodes, mst)}")
-    print(f"\nReport note:\n{get_mst_report_note()}")
-    print(f"\nComplexity analysis:\n{get_mst_complexity_analysis()}")
     visualize_mst(sample_nodes, mst)
 
 
