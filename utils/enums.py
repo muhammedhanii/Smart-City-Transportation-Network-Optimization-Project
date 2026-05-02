@@ -21,6 +21,10 @@ class NodeType(Enum):
     INDUSTRIAL    : Manufacturing or logistics zone.
     PARK          : Public recreational area.
     TRANSIT_HUB   : Major public-transport interchange.
+    AIRPORT       : Airport or air-transport hub.
+    BUSINESS      : Business district or technology park.
+    TOURISM       : Tourist or heritage destination.
+    SPORTS        : Sports venue or stadium.
     """
 
     NEIGHBORHOOD = "neighborhood"
@@ -32,6 +36,10 @@ class NodeType(Enum):
     INDUSTRIAL = "industrial"
     PARK = "park"
     TRANSIT_HUB = "transit_hub"
+    AIRPORT = "airport"
+    BUSINESS = "business"
+    TOURISM = "tourism"
+    SPORTS = "sports"
 
 
 class RoadCondition(Enum):

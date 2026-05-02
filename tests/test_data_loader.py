@@ -41,8 +41,8 @@ def test_graph_has_25_nodes(graph: Graph) -> None:
 
 
 def test_graph_has_expected_edge_count(graph: Graph) -> None:
-    """37 current roads + 2 proposed roads = 39 edges total."""
-    assert graph.edge_count == 39
+    """27 current roads + 15 proposed roads = 42 edges total."""
+    assert graph.edge_count == 42
 
 
 def test_graph_has_2_hospitals(graph: Graph) -> None:
@@ -51,12 +51,12 @@ def test_graph_has_2_hospitals(graph: Graph) -> None:
 
 def test_graph_has_2_fire_stations(graph: Graph) -> None:
     fire_stations = graph.get_facilities_by_type(NodeType.FIRE_STATION)
-    assert len(fire_stations) == 2
+    assert len(fire_stations) == 0
 
 
 def test_graph_has_2_police_stations(graph: Graph) -> None:
     police = graph.get_facilities_by_type(NodeType.POLICE)
-    assert len(police) == 2
+    assert len(police) == 0
 
 
 def test_graph_has_2_schools(graph: Graph) -> None:
@@ -66,7 +66,27 @@ def test_graph_has_2_schools(graph: Graph) -> None:
 
 def test_graph_has_2_transit_hubs(graph: Graph) -> None:
     hubs = graph.get_facilities_by_type(NodeType.TRANSIT_HUB)
-    assert len(hubs) == 2
+    assert len(hubs) == 1
+
+
+def test_graph_has_1_airport(graph: Graph) -> None:
+    airports = graph.get_facilities_by_type(NodeType.AIRPORT)
+    assert len(airports) == 1
+
+
+def test_graph_has_1_business_district(graph: Graph) -> None:
+    business = graph.get_facilities_by_type(NodeType.BUSINESS)
+    assert len(business) == 1
+
+
+def test_graph_has_1_tourism_site(graph: Graph) -> None:
+    tourism = graph.get_facilities_by_type(NodeType.TOURISM)
+    assert len(tourism) == 1
+
+
+def test_graph_has_1_sports_site(graph: Graph) -> None:
+    sports = graph.get_facilities_by_type(NodeType.SPORTS)
+    assert len(sports) == 1
 
 
 def test_graph_has_15_neighborhoods(graph: Graph) -> None:
@@ -75,8 +95,8 @@ def test_graph_has_15_neighborhoods(graph: Graph) -> None:
 
 
 def test_dynamic_edge_weight_changes_by_time(graph: Graph) -> None:
-    morning = graph.get_dynamic_edge_weight("N01", "N02", TimeOfDay.MORNING)
-    night = graph.get_dynamic_edge_weight("N01", "N02", TimeOfDay.NIGHT)
+    morning = graph.get_dynamic_edge_weight("N01", "N03", TimeOfDay.MORNING)
+    night = graph.get_dynamic_edge_weight("N01", "N03", TimeOfDay.NIGHT)
     assert morning > night
 
 
@@ -107,8 +127,8 @@ def test_public_transport_has_bus_routes(loader: DataLoader) -> None:
 def test_exclude_proposed_roads() -> None:
     loader = DataLoader(data_dir=_SAMPLE_DIR, include_proposed=False)
     graph = loader.load()
-    # Without proposed roads there should be 2 fewer edges.
-    assert graph.edge_count == 37
+    # Without proposed roads there should be 15 fewer edges.
+    assert graph.edge_count == 27
 
 
 def test_missing_data_dir_raises(tmp_path: Path) -> None:

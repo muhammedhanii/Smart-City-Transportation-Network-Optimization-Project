@@ -70,9 +70,9 @@ def main() -> None:
 
     # ── 5. Dynamic edge weight demonstration ─────────────────────────────
     logger.info("-" * 60)
-    logger.info("Dynamic edge weights for N01 (Downtown) → N02 (Riverside):")
+    logger.info("Dynamic edge weights for N01 (Downtown) → N03 (Uptown):")
     for tod in TimeOfDay:
-        w = graph.get_dynamic_edge_weight("N01", "N02", tod)
+        w = graph.get_dynamic_edge_weight("N01", "N03", tod)
         logger.info("  %-12s → weight = %.4f", tod.value.capitalize(), w)
 
     # ── 6. Neighbours of Downtown ─────────────────────────────────────────
@@ -91,10 +91,10 @@ def main() -> None:
 
     # ── 7. Real-time traffic update ───────────────────────────────────────
     logger.info("-" * 60)
-    logger.info("Simulating traffic incident: N01→N02 morning factor → 3.0")
-    w_before = graph.get_dynamic_edge_weight("N01", "N02", TimeOfDay.MORNING)
-    graph.update_traffic_factor("N01", "N02", TimeOfDay.MORNING, 3.0)
-    w_after = graph.get_dynamic_edge_weight("N01", "N02", TimeOfDay.MORNING)
+    logger.info("Simulating traffic incident: N01→N03 morning factor → 3.0")
+    w_before = graph.get_dynamic_edge_weight("N01", "N03", TimeOfDay.MORNING)
+    graph.update_traffic_factor("N01", "N03", TimeOfDay.MORNING, 3.0)
+    w_after = graph.get_dynamic_edge_weight("N01", "N03", TimeOfDay.MORNING)
     logger.info("  Weight before incident : %.4f", w_before)
     logger.info("  Weight after  incident : %.4f", w_after)
 

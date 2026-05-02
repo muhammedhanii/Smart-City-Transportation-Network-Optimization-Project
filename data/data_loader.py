@@ -7,7 +7,7 @@ algorithm teams.
 Expected directory layout::
 
     <data_dir>/
-        nodes.json            – 15 neighbourhoods + 10 critical facilities
+        nodes.json            – 15 neighbourhoods + 10 facilities
         edges.json            – current roads + proposed roads
         public_transport.json – metro lines + bus routes (metadata only)
 
