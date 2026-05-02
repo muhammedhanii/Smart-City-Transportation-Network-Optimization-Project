@@ -2,43 +2,83 @@
   "metro_lines": [
     {
       "line_id": "M1",
-      "name": "Red Line",
-      "color": "#E74C3C",
-      "stops": ["T01", "N01", "N07", "N11", "N04", "T02"],
-      "frequency_minutes": 5
+      "name": "Line 1 (Helwan - New Marg)",
+      "stops": ["N12", "N01", "N03", "T02", "N11"],
+      "daily_passengers": 1500000
     },
     {
       "line_id": "M2",
-      "name": "Blue Line",
-      "color": "#3498DB",
-      "stops": ["T01", "N13", "N06", "N12", "N05", "N14"],
-      "frequency_minutes": 8
+      "name": "Line 2 (Shubra - Giza)",
+      "stops": ["N11", "T02", "N03", "N10", "N08"],
+      "daily_passengers": 1200000
+    },
+    {
+      "line_id": "M3",
+      "name": "Line 3 (Airport - Imbaba)",
+      "stops": ["T01", "N05", "N02", "N03", "N09"],
+      "daily_passengers": 800000
     }
   ],
   "bus_routes": [
     {
       "route_id": "B1",
-      "name": "West Circuit",
-      "stops": ["T01", "N01", "N02", "N08", "N03", "N15", "N11", "T01"],
-      "frequency_minutes": 15
+      "stops": ["N01", "N03", "N06", "N09"],
+      "buses_assigned": 25,
+      "daily_passengers": 35000
     },
     {
       "route_id": "B2",
-      "name": "East Circuit",
-      "stops": ["T01", "N01", "N05", "N10", "N09", "N04", "T02"],
-      "frequency_minutes": 15
+      "stops": ["N07", "N15", "N08", "N10", "N03"],
+      "buses_assigned": 30,
+      "daily_passengers": 42000
     },
     {
       "route_id": "B3",
-      "name": "South Circuit",
-      "stops": ["T01", "N07", "N13", "N06", "N12", "N08"],
-      "frequency_minutes": 20
+      "stops": ["N02", "N05", "T01"],
+      "buses_assigned": 20,
+      "daily_passengers": 28000
     },
     {
       "route_id": "B4",
-      "name": "Hospital Express",
-      "stops": ["T01", "H01", "N01", "N07", "H02", "N04"],
-      "frequency_minutes": 10
+      "stops": ["N04", "N14", "N02", "N03"],
+      "buses_assigned": 22,
+      "daily_passengers": 31000
+    },
+    {
+      "route_id": "B5",
+      "stops": ["N08", "N12", "N01"],
+      "buses_assigned": 18,
+      "daily_passengers": 25000
+    },
+    {
+      "route_id": "B6",
+      "stops": ["N11", "N05", "N02"],
+      "buses_assigned": 24,
+      "daily_passengers": 33000
+    },
+    {
+      "route_id": "B7",
+      "stops": ["N13", "N04", "N14"],
+      "buses_assigned": 15,
+      "daily_passengers": 21000
+    },
+    {
+      "route_id": "B8",
+      "stops": ["C01", "N15", "N07"],
+      "buses_assigned": 12,
+      "daily_passengers": 17000
+    },
+    {
+      "route_id": "B9",
+      "stops": ["N01", "N08", "N10", "N09", "N06"],
+      "buses_assigned": 28,
+      "daily_passengers": 39000
+    },
+    {
+      "route_id": "B10",
+      "stops": ["C02", "N04", "N02", "N05"],
+      "buses_assigned": 20,
+      "daily_passengers": 28000
     }
   ]
 }

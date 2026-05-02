@@ -2,205 +2,205 @@
   "neighborhoods": [
     {
       "id": "N01",
-      "name": "Downtown",
+      "name": "Maadi",
       "node_type": "neighborhood",
-      "population": 50000,
-      "x_coordinate": 500.0,
-      "y_coordinate": 500.0
+      "population": 250000,
+      "x_coordinate": 368.4,
+      "y_coordinate": 457.1
     },
     {
       "id": "N02",
-      "name": "Riverside",
+      "name": "Nasr City",
       "node_type": "neighborhood",
-      "population": 35000,
-      "x_coordinate": 300.0,
-      "y_coordinate": 400.0
+      "population": 500000,
+      "x_coordinate": 463.2,
+      "y_coordinate": 742.9
     },
     {
       "id": "N03",
-      "name": "Westside",
+      "name": "Downtown Cairo",
       "node_type": "neighborhood",
-      "population": 40000,
-      "x_coordinate": 150.0,
-      "y_coordinate": 500.0
+      "population": 100000,
+      "x_coordinate": 357.9,
+      "y_coordinate": 685.7
     },
     {
       "id": "N04",
-      "name": "Northgate",
+      "name": "New Cairo",
       "node_type": "neighborhood",
-      "population": 30000,
-      "x_coordinate": 500.0,
-      "y_coordinate": 800.0
+      "population": 300000,
+      "x_coordinate": 600.0,
+      "y_coordinate": 657.1
     },
     {
       "id": "N05",
-      "name": "Eastville",
+      "name": "Heliopolis",
       "node_type": "neighborhood",
-      "population": 45000,
-      "x_coordinate": 700.0,
-      "y_coordinate": 450.0
+      "population": 200000,
+      "x_coordinate": 442.1,
+      "y_coordinate": 828.6
     },
     {
       "id": "N06",
-      "name": "Southpark",
+      "name": "Zamalek",
       "node_type": "neighborhood",
-      "population": 38000,
-      "x_coordinate": 500.0,
-      "y_coordinate": 200.0
+      "population": 50000,
+      "x_coordinate": 336.8,
+      "y_coordinate": 742.9
     },
     {
       "id": "N07",
-      "name": "Midtown",
+      "name": "6th October City",
       "node_type": "neighborhood",
-      "population": 55000,
-      "x_coordinate": 480.0,
-      "y_coordinate": 480.0
+      "population": 400000,
+      "x_coordinate": 84.2,
+      "y_coordinate": 371.4
     },
     {
       "id": "N08",
-      "name": "Harbor View",
+      "name": "Giza",
       "node_type": "neighborhood",
-      "population": 20000,
-      "x_coordinate": 200.0,
-      "y_coordinate": 250.0
+      "population": 550000,
+      "x_coordinate": 326.3,
+      "y_coordinate": 542.9
     },
     {
       "id": "N09",
-      "name": "Green Hills",
+      "name": "Mohandessin",
       "node_type": "neighborhood",
-      "population": 28000,
-      "x_coordinate": 650.0,
-      "y_coordinate": 750.0
+      "population": 180000,
+      "x_coordinate": 315.8,
+      "y_coordinate": 714.3
     },
     {
       "id": "N10",
-      "name": "Tech District",
+      "name": "Dokki",
       "node_type": "neighborhood",
-      "population": 42000,
-      "x_coordinate": 750.0,
-      "y_coordinate": 600.0
+      "population": 220000,
+      "x_coordinate": 326.3,
+      "y_coordinate": 657.1
     },
     {
       "id": "N11",
-      "name": "Old Town",
+      "name": "Shubra",
       "node_type": "neighborhood",
-      "population": 32000,
-      "x_coordinate": 380.0,
-      "y_coordinate": 550.0
+      "population": 450000,
+      "x_coordinate": 357.9,
+      "y_coordinate": 885.7
     },
     {
       "id": "N12",
-      "name": "University Quarter",
+      "name": "Helwan",
       "node_type": "neighborhood",
-      "population": 25000,
-      "x_coordinate": 600.0,
-      "y_coordinate": 300.0
+      "population": 350000,
+      "x_coordinate": 452.6,
+      "y_coordinate": 142.9
     },
     {
       "id": "N13",
-      "name": "Market District",
+      "name": "New Administrative Capital",
       "node_type": "neighborhood",
-      "population": 37000,
-      "x_coordinate": 450.0,
-      "y_coordinate": 380.0
+      "population": 50000,
+      "x_coordinate": 947.4,
+      "y_coordinate": 628.6
     },
     {
       "id": "N14",
-      "name": "Industrial Zone",
+      "name": "Al Rehab",
       "node_type": "neighborhood",
-      "population": 15000,
-      "x_coordinate": 800.0,
-      "y_coordinate": 350.0
+      "population": 120000,
+      "x_coordinate": 621.1,
+      "y_coordinate": 742.9
     },
     {
       "id": "N15",
-      "name": "Lakeside",
+      "name": "Sheikh Zayed",
       "node_type": "neighborhood",
-      "population": 22000,
-      "x_coordinate": 200.0,
-      "y_coordinate": 700.0
+      "population": 150000,
+      "x_coordinate": 42.1,
+      "y_coordinate": 600.0
     }
   ],
   "facilities": [
     {
-      "id": "H01",
-      "name": "City Central Hospital",
-      "node_type": "hospital",
-      "population": 0,
-      "x_coordinate": 490.0,
-      "y_coordinate": 510.0
-    },
-    {
-      "id": "H02",
-      "name": "Northside Medical Center",
-      "node_type": "hospital",
-      "population": 0,
-      "x_coordinate": 510.0,
-      "y_coordinate": 820.0
-    },
-    {
-      "id": "F01",
-      "name": "Central Fire Station",
-      "node_type": "fire_station",
-      "population": 0,
-      "x_coordinate": 460.0,
-      "y_coordinate": 490.0
-    },
-    {
-      "id": "F02",
-      "name": "East Fire Station",
-      "node_type": "fire_station",
-      "population": 0,
-      "x_coordinate": 720.0,
-      "y_coordinate": 440.0
-    },
-    {
-      "id": "P01",
-      "name": "Main Police HQ",
-      "node_type": "police",
-      "population": 0,
-      "x_coordinate": 505.0,
-      "y_coordinate": 520.0
-    },
-    {
-      "id": "P02",
-      "name": "North Police Station",
-      "node_type": "police",
-      "population": 0,
-      "x_coordinate": 490.0,
-      "y_coordinate": 770.0
-    },
-    {
-      "id": "S01",
-      "name": "Westside School",
-      "node_type": "school",
-      "population": 0,
-      "x_coordinate": 160.0,
-      "y_coordinate": 510.0
-    },
-    {
-      "id": "S02",
-      "name": "East Academy",
-      "node_type": "school",
-      "population": 0,
-      "x_coordinate": 685.0,
-      "y_coordinate": 460.0
-    },
-    {
       "id": "T01",
-      "name": "Central Transit Hub",
+      "name": "Cairo International Airport",
       "node_type": "transit_hub",
       "population": 0,
-      "x_coordinate": 500.0,
-      "y_coordinate": 495.0
+      "x_coordinate": 536.8,
+      "y_coordinate": 885.7
     },
     {
       "id": "T02",
-      "name": "North Transit Hub",
+      "name": "Ramses Railway Station",
       "node_type": "transit_hub",
       "population": 0,
-      "x_coordinate": 505.0,
-      "y_coordinate": 790.0
+      "x_coordinate": 368.4,
+      "y_coordinate": 742.9
+    },
+    {
+      "id": "S01",
+      "name": "Cairo University",
+      "node_type": "school",
+      "population": 0,
+      "x_coordinate": 326.3,
+      "y_coordinate": 657.1
+    },
+    {
+      "id": "S02",
+      "name": "Al-Azhar University",
+      "node_type": "school",
+      "population": 0,
+      "x_coordinate": 378.9,
+      "y_coordinate": 714.3
+    },
+    {
+      "id": "P01",
+      "name": "Egyptian Museum",
+      "node_type": "park",
+      "population": 0,
+      "x_coordinate": 347.4,
+      "y_coordinate": 714.3
+    },
+    {
+      "id": "P02",
+      "name": "Cairo International Stadium",
+      "node_type": "park",
+      "population": 0,
+      "x_coordinate": 421.1,
+      "y_coordinate": 771.4
+    },
+    {
+      "id": "C01",
+      "name": "Smart Village",
+      "node_type": "commercial",
+      "population": 0,
+      "x_coordinate": 73.7,
+      "y_coordinate": 771.4
+    },
+    {
+      "id": "C02",
+      "name": "Cairo Festival City",
+      "node_type": "commercial",
+      "population": 0,
+      "x_coordinate": 526.3,
+      "y_coordinate": 657.1
+    },
+    {
+      "id": "H01",
+      "name": "Qasr El Aini Hospital",
+      "node_type": "hospital",
+      "population": 0,
+      "x_coordinate": 347.4,
+      "y_coordinate": 657.1
+    },
+    {
+      "id": "H02",
+      "name": "Maadi Military Hospital",
+      "node_type": "hospital",
+      "population": 0,
+      "x_coordinate": 368.4,
+      "y_coordinate": 428.6
     }
   ]
 }
