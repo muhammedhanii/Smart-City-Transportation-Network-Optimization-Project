@@ -145,15 +145,32 @@ class GraphValidator:
                     )
 
     def _check_isolated_nodes(self) -> None:
-        """Warn about nodes that have no outgoing or incoming edges.
+        """Warn about nodes that have no outgoing *and* no incoming edges.
 
-        Isolated nodes are not necessarily invalid (a proposed station might
-        have no roads yet), but they are suspicious and should be flagged.
+        In a directed graph a node may have only incoming edges and no outgoing
+        ones (a pure sink), or only outgoing edges and no incoming ones (a pure
+        source) – neither case is flagged as fully isolated.  Only nodes with
+        zero edges in *both* directions receive a warning.
+
+        Isolated nodes are not necessarily invalid (e.g. a proposed station
+        that has no roads yet), but they are suspicious and should be flagged.
         """
+        # Build the set of node ids that appear as *to_node* in at least one edge.
+        nodes_with_incoming: Set[str] = {
+            edge.to_node for edge in self._graph.get_all_edges()
+        }
+        if not self._graph.directed:
+            # In an undirected graph every edge is traversable both ways, so
+            # both endpoints always carry "incoming" coverage.
+            nodes_with_incoming.update(
+                edge.from_node for edge in self._graph.get_all_edges()
+            )
+
         for node in self._graph.get_all_nodes():
-            outgoing: int = len(self._graph.get_neighbors(node.id))
-            if outgoing == 0:
+            has_outgoing: bool = len(self._graph.get_neighbors(node.id)) > 0
+            has_incoming: bool = node.id in nodes_with_incoming
+            if not has_outgoing and not has_incoming:
                 self._warnings.append(
                     f"Node {node.id!r} ({node.name!r}) is isolated "
-                    f"(no edges in either direction)."
+                    f"(no outgoing and no incoming edges)."
                 )

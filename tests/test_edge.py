@@ -74,13 +74,21 @@ def test_get_weight_poor_condition() -> None:
 
 
 def test_weight_is_cached() -> None:
-    """Second call must return the cached value without recomputation."""
+    """Second call must return the memoised value without recomputation.
+
+    This test verifies the caching contract: once a weight is computed for a
+    given TimeOfDay it is stored and returned as-is on subsequent calls until
+    the cache is explicitly invalidated via :meth:`Edge.invalidate_cache`.
+    Mutating ``traffic_factors`` directly without invalidating the cache is
+    intentional here – it is the exact scenario that ``invalidate_cache``
+    exists to handle (see :func:`test_invalidate_cache_triggers_recomputation`).
+    """
     edge = make_edge()
     weight1 = edge.get_weight(TimeOfDay.MORNING)
-    # Modify internal factor after first call – cache should still return old value.
+    # Directly mutate the factor without invalidating – cache returns old value.
     edge.traffic_factors[TimeOfDay.MORNING] = 99.0
     weight2 = edge.get_weight(TimeOfDay.MORNING)
-    assert weight1 == weight2  # Cache hit – stale value returned intentionally.
+    assert weight1 == weight2, "Cache must return the memoised value until invalidated."
 
 
 def test_invalidate_cache_triggers_recomputation() -> None:
