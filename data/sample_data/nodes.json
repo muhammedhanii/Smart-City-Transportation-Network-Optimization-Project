@@ -1,0 +1,206 @@
+{
+  "neighborhoods": [
+    {
+      "id": "N01",
+      "name": "Downtown",
+      "node_type": "neighborhood",
+      "population": 50000,
+      "x_coordinate": 500.0,
+      "y_coordinate": 500.0
+    },
+    {
+      "id": "N02",
+      "name": "Riverside",
+      "node_type": "neighborhood",
+      "population": 35000,
+      "x_coordinate": 300.0,
+      "y_coordinate": 400.0
+    },
+    {
+      "id": "N03",
+      "name": "Westside",
+      "node_type": "neighborhood",
+      "population": 40000,
+      "x_coordinate": 150.0,
+      "y_coordinate": 500.0
+    },
+    {
+      "id": "N04",
+      "name": "Northgate",
+      "node_type": "neighborhood",
+      "population": 30000,
+      "x_coordinate": 500.0,
+      "y_coordinate": 800.0
+    },
+    {
+      "id": "N05",
+      "name": "Eastville",
+      "node_type": "neighborhood",
+      "population": 45000,
+      "x_coordinate": 700.0,
+      "y_coordinate": 450.0
+    },
+    {
+      "id": "N06",
+      "name": "Southpark",
+      "node_type": "neighborhood",
+      "population": 38000,
+      "x_coordinate": 500.0,
+      "y_coordinate": 200.0
+    },
+    {
+      "id": "N07",
+      "name": "Midtown",
+      "node_type": "neighborhood",
+      "population": 55000,
+      "x_coordinate": 480.0,
+      "y_coordinate": 480.0
+    },
+    {
+      "id": "N08",
+      "name": "Harbor View",
+      "node_type": "neighborhood",
+      "population": 20000,
+      "x_coordinate": 200.0,
+      "y_coordinate": 250.0
+    },
+    {
+      "id": "N09",
+      "name": "Green Hills",
+      "node_type": "neighborhood",
+      "population": 28000,
+      "x_coordinate": 650.0,
+      "y_coordinate": 750.0
+    },
+    {
+      "id": "N10",
+      "name": "Tech District",
+      "node_type": "neighborhood",
+      "population": 42000,
+      "x_coordinate": 750.0,
+      "y_coordinate": 600.0
+    },
+    {
+      "id": "N11",
+      "name": "Old Town",
+      "node_type": "neighborhood",
+      "population": 32000,
+      "x_coordinate": 380.0,
+      "y_coordinate": 550.0
+    },
+    {
+      "id": "N12",
+      "name": "University Quarter",
+      "node_type": "neighborhood",
+      "population": 25000,
+      "x_coordinate": 600.0,
+      "y_coordinate": 300.0
+    },
+    {
+      "id": "N13",
+      "name": "Market District",
+      "node_type": "neighborhood",
+      "population": 37000,
+      "x_coordinate": 450.0,
+      "y_coordinate": 380.0
+    },
+    {
+      "id": "N14",
+      "name": "Industrial Zone",
+      "node_type": "neighborhood",
+      "population": 15000,
+      "x_coordinate": 800.0,
+      "y_coordinate": 350.0
+    },
+    {
+      "id": "N15",
+      "name": "Lakeside",
+      "node_type": "neighborhood",
+      "population": 22000,
+      "x_coordinate": 200.0,
+      "y_coordinate": 700.0
+    }
+  ],
+  "facilities": [
+    {
+      "id": "H01",
+      "name": "City Central Hospital",
+      "node_type": "hospital",
+      "population": 0,
+      "x_coordinate": 490.0,
+      "y_coordinate": 510.0
+    },
+    {
+      "id": "H02",
+      "name": "Northside Medical Center",
+      "node_type": "hospital",
+      "population": 0,
+      "x_coordinate": 510.0,
+      "y_coordinate": 820.0
+    },
+    {
+      "id": "F01",
+      "name": "Central Fire Station",
+      "node_type": "fire_station",
+      "population": 0,
+      "x_coordinate": 460.0,
+      "y_coordinate": 490.0
+    },
+    {
+      "id": "F02",
+      "name": "East Fire Station",
+      "node_type": "fire_station",
+      "population": 0,
+      "x_coordinate": 720.0,
+      "y_coordinate": 440.0
+    },
+    {
+      "id": "P01",
+      "name": "Main Police HQ",
+      "node_type": "police",
+      "population": 0,
+      "x_coordinate": 505.0,
+      "y_coordinate": 520.0
+    },
+    {
+      "id": "P02",
+      "name": "North Police Station",
+      "node_type": "police",
+      "population": 0,
+      "x_coordinate": 490.0,
+      "y_coordinate": 770.0
+    },
+    {
+      "id": "S01",
+      "name": "Westside School",
+      "node_type": "school",
+      "population": 0,
+      "x_coordinate": 160.0,
+      "y_coordinate": 510.0
+    },
+    {
+      "id": "S02",
+      "name": "East Academy",
+      "node_type": "school",
+      "population": 0,
+      "x_coordinate": 685.0,
+      "y_coordinate": 460.0
+    },
+    {
+      "id": "T01",
+      "name": "Central Transit Hub",
+      "node_type": "transit_hub",
+      "population": 0,
+      "x_coordinate": 500.0,
+      "y_coordinate": 495.0
+    },
+    {
+      "id": "T02",
+      "name": "North Transit Hub",
+      "node_type": "transit_hub",
+      "population": 0,
+      "x_coordinate": 505.0,
+      "y_coordinate": 790.0
+    }
+  ]
+}

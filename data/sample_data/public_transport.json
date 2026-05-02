@@ -1,0 +1,44 @@
+{
+  "metro_lines": [
+    {
+      "line_id": "M1",
+      "name": "Red Line",
+      "color": "#E74C3C",
+      "stops": ["T01", "N01", "N07", "N11", "N04", "T02"],
+      "frequency_minutes": 5
+    },
+    {
+      "line_id": "M2",
+      "name": "Blue Line",
+      "color": "#3498DB",
+      "stops": ["T01", "N13", "N06", "N12", "N05", "N14"],
+      "frequency_minutes": 8
+    }
+  ],
+  "bus_routes": [
+    {
+      "route_id": "B1",
+      "name": "West Circuit",
+      "stops": ["T01", "N01", "N02", "N08", "N03", "N15", "N11", "T01"],
+      "frequency_minutes": 15
+    },
+    {
+      "route_id": "B2",
+      "name": "East Circuit",
+      "stops": ["T01", "N01", "N05", "N10", "N09", "N04", "T02"],
+      "frequency_minutes": 15
+    },
+    {
+      "route_id": "B3",
+      "name": "South Circuit",
+      "stops": ["T01", "N07", "N13", "N06", "N12", "N08"],
+      "frequency_minutes": 20
+    },
+    {
+      "route_id": "B4",
+      "name": "Hospital Express",
+      "stops": ["T01", "H01", "N01", "N07", "H02", "N04"],
+      "frequency_minutes": 10
+    }
+  ]
+}

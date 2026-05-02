@@ -1,0 +1,359 @@
+{
+  "current_roads": [
+    {
+      "from_node": "N01",
+      "to_node": "N02",
+      "distance": 2.5,
+      "base_capacity": 1500,
+      "road_condition": "good",
+      "traffic_factors": { "morning": 1.6, "afternoon": 1.2, "evening": 1.5, "night": 0.8 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N01",
+      "to_node": "N05",
+      "distance": 2.1,
+      "base_capacity": 2000,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.7, "afternoon": 1.3, "evening": 1.6, "night": 0.9 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N01",
+      "to_node": "N07",
+      "distance": 0.3,
+      "base_capacity": 3000,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.8, "afternoon": 1.4, "evening": 1.7, "night": 0.9 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N01",
+      "to_node": "N11",
+      "distance": 1.3,
+      "base_capacity": 1800,
+      "road_condition": "good",
+      "traffic_factors": { "morning": 1.5, "afternoon": 1.2, "evening": 1.4, "night": 0.8 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N02",
+      "to_node": "N03",
+      "distance": 1.6,
+      "base_capacity": 1200,
+      "road_condition": "fair",
+      "traffic_factors": { "morning": 1.4, "afternoon": 1.1, "evening": 1.3, "night": 0.7 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N02",
+      "to_node": "N08",
+      "distance": 1.8,
+      "base_capacity": 1000,
+      "road_condition": "good",
+      "traffic_factors": { "morning": 1.3, "afternoon": 1.1, "evening": 1.2, "night": 0.7 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N02",
+      "to_node": "N13",
+      "distance": 2.2,
+      "base_capacity": 1500,
+      "road_condition": "good",
+      "traffic_factors": { "morning": 1.5, "afternoon": 1.2, "evening": 1.4, "night": 0.8 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N03",
+      "to_node": "N08",
+      "distance": 2.5,
+      "base_capacity": 1000,
+      "road_condition": "fair",
+      "traffic_factors": { "morning": 1.3, "afternoon": 1.1, "evening": 1.2, "night": 0.7 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N03",
+      "to_node": "N15",
+      "distance": 2.2,
+      "base_capacity": 900,
+      "road_condition": "poor",
+      "traffic_factors": { "morning": 1.2, "afternoon": 1.0, "evening": 1.1, "night": 0.7 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N04",
+      "to_node": "N09",
+      "distance": 1.6,
+      "base_capacity": 1200,
+      "road_condition": "good",
+      "traffic_factors": { "morning": 1.4, "afternoon": 1.1, "evening": 1.3, "night": 0.8 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N04",
+      "to_node": "N11",
+      "distance": 2.6,
+      "base_capacity": 1500,
+      "road_condition": "good",
+      "traffic_factors": { "morning": 1.5, "afternoon": 1.2, "evening": 1.4, "night": 0.8 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N05",
+      "to_node": "N10",
+      "distance": 1.8,
+      "base_capacity": 1800,
+      "road_condition": "good",
+      "traffic_factors": { "morning": 1.5, "afternoon": 1.2, "evening": 1.4, "night": 0.8 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N05",
+      "to_node": "N12",
+      "distance": 3.2,
+      "base_capacity": 1400,
+      "road_condition": "fair",
+      "traffic_factors": { "morning": 1.4, "afternoon": 1.1, "evening": 1.3, "night": 0.7 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N05",
+      "to_node": "N14",
+      "distance": 1.0,
+      "base_capacity": 1200,
+      "road_condition": "good",
+      "traffic_factors": { "morning": 1.4, "afternoon": 1.1, "evening": 1.3, "night": 0.8 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N06",
+      "to_node": "N08",
+      "distance": 3.5,
+      "base_capacity": 900,
+      "road_condition": "fair",
+      "traffic_factors": { "morning": 1.3, "afternoon": 1.0, "evening": 1.2, "night": 0.7 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N06",
+      "to_node": "N12",
+      "distance": 2.1,
+      "base_capacity": 1300,
+      "road_condition": "good",
+      "traffic_factors": { "morning": 1.4, "afternoon": 1.1, "evening": 1.3, "night": 0.8 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N06",
+      "to_node": "N13",
+      "distance": 1.9,
+      "base_capacity": 1500,
+      "road_condition": "good",
+      "traffic_factors": { "morning": 1.5, "afternoon": 1.2, "evening": 1.4, "night": 0.8 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N07",
+      "to_node": "N11",
+      "distance": 1.1,
+      "base_capacity": 2000,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.6, "afternoon": 1.3, "evening": 1.5, "night": 0.9 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N07",
+      "to_node": "N13",
+      "distance": 1.1,
+      "base_capacity": 2000,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.7, "afternoon": 1.3, "evening": 1.6, "night": 0.9 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N09",
+      "to_node": "N10",
+      "distance": 2.0,
+      "base_capacity": 1300,
+      "road_condition": "good",
+      "traffic_factors": { "morning": 1.4, "afternoon": 1.1, "evening": 1.3, "night": 0.7 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N09",
+      "to_node": "N15",
+      "distance": 4.8,
+      "base_capacity": 800,
+      "road_condition": "poor",
+      "traffic_factors": { "morning": 1.2, "afternoon": 1.0, "evening": 1.1, "night": 0.7 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N10",
+      "to_node": "N14",
+      "distance": 1.1,
+      "base_capacity": 1500,
+      "road_condition": "good",
+      "traffic_factors": { "morning": 1.4, "afternoon": 1.1, "evening": 1.3, "night": 0.8 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N11",
+      "to_node": "N15",
+      "distance": 3.6,
+      "base_capacity": 900,
+      "road_condition": "fair",
+      "traffic_factors": { "morning": 1.3, "afternoon": 1.0, "evening": 1.2, "night": 0.7 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "N12",
+      "to_node": "N14",
+      "distance": 2.1,
+      "base_capacity": 1200,
+      "road_condition": "fair",
+      "traffic_factors": { "morning": 1.3, "afternoon": 1.1, "evening": 1.2, "night": 0.7 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "H01",
+      "to_node": "N01",
+      "distance": 0.2,
+      "base_capacity": 3000,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.4, "afternoon": 1.1, "evening": 1.3, "night": 0.9 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "H01",
+      "to_node": "N07",
+      "distance": 0.3,
+      "base_capacity": 2500,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.4, "afternoon": 1.1, "evening": 1.3, "night": 0.9 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "H02",
+      "to_node": "N04",
+      "distance": 0.4,
+      "base_capacity": 2500,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.3, "afternoon": 1.1, "evening": 1.2, "night": 0.9 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "F01",
+      "to_node": "N01",
+      "distance": 0.2,
+      "base_capacity": 3000,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.3, "afternoon": 1.0, "evening": 1.2, "night": 0.9 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "F01",
+      "to_node": "N07",
+      "distance": 0.2,
+      "base_capacity": 2500,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.3, "afternoon": 1.0, "evening": 1.2, "night": 0.9 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "F02",
+      "to_node": "N05",
+      "distance": 0.3,
+      "base_capacity": 2500,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.3, "afternoon": 1.0, "evening": 1.2, "night": 0.9 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "P01",
+      "to_node": "N01",
+      "distance": 0.1,
+      "base_capacity": 3000,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.3, "afternoon": 1.0, "evening": 1.2, "night": 0.9 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "P02",
+      "to_node": "N04",
+      "distance": 0.3,
+      "base_capacity": 2000,
+      "road_condition": "good",
+      "traffic_factors": { "morning": 1.3, "afternoon": 1.0, "evening": 1.2, "night": 0.9 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "S01",
+      "to_node": "N03",
+      "distance": 0.3,
+      "base_capacity": 1500,
+      "road_condition": "good",
+      "traffic_factors": { "morning": 1.5, "afternoon": 1.1, "evening": 1.3, "night": 0.7 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "S02",
+      "to_node": "N05",
+      "distance": 0.3,
+      "base_capacity": 1500,
+      "road_condition": "good",
+      "traffic_factors": { "morning": 1.5, "afternoon": 1.1, "evening": 1.3, "night": 0.7 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "T01",
+      "to_node": "N01",
+      "distance": 0.1,
+      "base_capacity": 5000,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.8, "afternoon": 1.4, "evening": 1.7, "night": 0.9 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "T01",
+      "to_node": "N07",
+      "distance": 0.2,
+      "base_capacity": 5000,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.8, "afternoon": 1.4, "evening": 1.7, "night": 0.9 },
+      "is_bidirectional": true
+    },
+    {
+      "from_node": "T02",
+      "to_node": "N04",
+      "distance": 0.2,
+      "base_capacity": 4000,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.6, "afternoon": 1.2, "evening": 1.5, "night": 0.9 },
+      "is_bidirectional": true
+    }
+  ],
+  "proposed_roads": [
+    {
+      "from_node": "N04",
+      "to_node": "N10",
+      "distance": 3.5,
+      "base_capacity": 1500,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.0, "afternoon": 1.0, "evening": 1.0, "night": 1.0 },
+      "is_bidirectional": true,
+      "is_proposed": true
+    },
+    {
+      "from_node": "N04",
+      "to_node": "N15",
+      "distance": 5.2,
+      "base_capacity": 1200,
+      "road_condition": "excellent",
+      "traffic_factors": { "morning": 1.0, "afternoon": 1.0, "evening": 1.0, "night": 1.0 },
+      "is_bidirectional": true,
+      "is_proposed": true
+    }
+  ]
+}
